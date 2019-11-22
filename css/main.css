@@ -1,6 +1,6 @@
 html {
   font-family: Overpass, sans-serif;
-  background: linear-gradient(0deg, #ff5e3a 0%, #ff9500 100%) fixed;
+  background-image: linear-gradient(#ff9500, #ff5e3a);
 }
 
 h1, h2, p, i {
@@ -8,7 +8,7 @@ h1, h2, p, i {
 }
 
 .break {
-  border-bottom: solid 3px rgba(255, 255, 255, 0.6);
+  border-bottom: solid 3px rgba(255, 255, 255, .6);
 }
 
 .btn {
@@ -21,4 +21,13 @@ h1, h2, p, i {
   background-color: rgba(255, 255, 255, 1);
   border: 3px solid #fff;
   color: #ff5e3a;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .break {
+    border-bottom: 0;
+    border-right: solid 3px rgba(255, 255, 255, .6);
+  }
+
 }
